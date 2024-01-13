@@ -1,0 +1,9 @@
+<mat-card style="margin-top: 40px;">
+    <mat-action-list>
+        <div mat-subheader>Menu</div>
+        <button mat-list-item routerLink="/user-dashboard/user-profile">Profile</button>
+        <button mat-list-item routerLink="/user-dashboard/employees">All Employees</button>
+        <button mat-list-item routerLink="/user-dashboard/find-employee">Find Employee</button>
+        <button mat-list-item routerLink="/admin/logout" (click)="logout()">Logout</button>
+    </mat-action-list>
+</mat-card>

@@ -1,0 +1,42 @@
+<h3 style="margin-left: 20px; margin-top: 40px;">Add New Employee</h3>
+<mat-card style="margin-top: 20px;">
+   
+    <div class="container">
+        <!-- <div class="row"> -->
+            <div class="col-md-8 offset-md-2" style="margin-top: 20px;">
+                <form (ngSubmit)="addEmployee()">
+                    <div class="row">
+
+                        <div class="col-md-4" style="margin-top: 20px;" >
+                            <mat-form-field class="w100" appearance="fill">
+                                <mat-label>Enter Employee Name</mat-label>
+                                <input [(ngModel)]="quizData.name" type="text" name="maxMarks" placeholder="Enter Here" matInput />
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-4" style="margin-top: 20px;">
+                            <mat-form-field class="w100" appearance="fill">
+                                <mat-label>Enter Employee Skills</mat-label>
+                                <input type="text" [(ngModel)]="quizData.skills" name="noOfQuestions" placeholder="Enter Here" matInput />
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-md-4" style="margin-top: 20px;">
+                            <mat-form-field class="w100" appearance="fill">
+                                <mat-label>Enter Employee Leaves</mat-label>
+                                <input type="text" [(ngModel)]="quizData.empleaves" name="noOfQuestions" placeholder="Enter Here" matInput />
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <br>
+                      <div class="container text-center mb20" >
+                    <button type="submit"  mat-raised-button style="background-color: #555555; color: white; margin-right: 30px; margin-bottom: 20px;">Add Employee</button>
+                </div>
+
+                </form>
+
+
+            </div>
+        <!-- </div> -->
+    </div>
+</mat-card>

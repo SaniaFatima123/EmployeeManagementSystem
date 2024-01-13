@@ -1,0 +1,47 @@
+
+<!-- showing employee by id -->
+<mat-card style="margin-top: 40px;">
+    <div>
+        <h3 style="margin-left: 20px; margin-top: 20px;">Enter the Employee ID to search Employee</h3>
+    </div>
+    <form class="example-form" >
+        <!-- <mat-form-field class="example-full-width"> -->
+          <input  matInput placeholder="Employee ID here.." style="margin-left: 20px;" [(ngModel)]="id" [ngModelOptions]="{standalone: true}">
+        <!-- </mat-form-field> -->
+        
+        
+            <button mat-raised-button (click)="findEmployee(id)" style="margin-left: 20px; margin-bottom: 20px; margin-top: 10px; background-color: #555555; color: white;">Find</button> 
+     
+      </form>
+
+    <div style="margin-left: 20px;">
+        <p>Employee ID: {{employee.id}}</p>
+        <p>Employee Name: {{employee.name}}</p>
+        <p>Employee Skils: {{employee.skills}}</p>
+        <p>Employee Leaves: {{employee.empleaves}}</p>
+    </div>
+</mat-card><hr>
+<!-- showing employee by name -->
+<mat-card>
+    <div>
+        <h3 style="margin-left: 20px;">Enter the Employee name to search Employee</h3>
+    </div>
+    <form class="example-form">
+        <!-- <mat-form-field class="example-full-width"> -->
+          <input  matInput placeholder="Employee Name here.." style="margin-left: 20px;" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+        <!-- </mat-form-field> -->
+        
+        
+            <button mat-raised-button (click)="findEmployeeByName(name)" style="margin-left: 20px; margin-bottom: 20px; margin-top: 10px; background-color: #555555; color: white;">Find</button> 
+     
+      </form>
+<!-- </mat-card>
+<mat-card> -->
+    <div *ngFor="let employee of employees" style="margin-left: 20px;">
+        <p>Employee ID: {{employee.id}}</p>
+        <p>Employee Name: {{employee.name}}</p>
+        <p>Employee Skills: {{employee.skills}}</p>
+        <p>Employee Leaves: {{employee.empleaves}}</p>
+        <hr>
+    </div>
+</mat-card>

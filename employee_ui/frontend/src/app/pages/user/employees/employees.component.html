@@ -1,0 +1,15 @@
+<h3 style="margin-top: 40px;">All Employees</h3>
+<div *ngFor="let e of employees">
+    <mat-card style="margin-top: 20px;">
+        <mat-card-content>
+            <div>
+        <p>Employee ID: {{e.id}}</p>
+        <p>Employee Name: {{e.name}}</p>
+        <p>Employee Skills: {{e.skills}}</p>
+        <p>Employee Leaves: {{e.empleaves}}</p>
+            </div>
+            <mat-action-action>
+            </mat-action-action>
+        </mat-card-content>
+      </mat-card>
+    </div>
